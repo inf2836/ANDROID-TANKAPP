@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" xmlns:design="http://schemas.android.com/apk/res-auto"
+                android:layout_marginTop="0dp"
+                tools:context="ue1.worms.hs.de.tankapp.MainActivity"
+>
+        <TabHost
+            android:layout_width="match_parent"
+            android:id="@+id/tabhost1"
+            android:layout_height="match_parent" android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <TabWidget
+                    android:id="@android:id/tabs"
+                    android:layout_width="match_parent"
+                    android:layout_height="59dp">
+            </TabWidget>
+
+            <FrameLayout
+                    android:id="@android:id/tabcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                <LinearLayout
+                        android:id="@+id/tab1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                    <ListView
+                            android:id="@+id/listView"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true" android:layout_marginTop="0dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                        android:id="@+id/tab2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                    <ListView
+                            android:id="@+id/listView1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true" android:layout_marginTop="0dp"/>
+                </LinearLayout>
+                <LinearLayout
+                        android:id="@+id/tab3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                    <ListView
+                            android:id="@+id/listView2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true" android:layout_marginTop="0dp"/>
+                </LinearLayout>
+
+            </FrameLayout>
+        </LinearLayout>
+    </TabHost>
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/map"
+            android:background="@color/Milk_White"
+            android:layout_alignParentBottom="true" android:layout_marginBottom="15dp"
+            android:layout_alignParentEnd="true" android:layout_marginEnd="20dp"
+            design:backgroundTint="@color/Milk_White"/>
+
+    <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:src="@drawable/sort"
+            android:background="@color/Milk_White"
+            design:backgroundTint="@color/Milk_White" android:layout_alignParentBottom="true"
+            android:layout_marginBottom="80dp" android:layout_alignStart="@+id/fab"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TankApp</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="search_title"></string>
+    <string name="search_title1">search_title</string>
+    <string-array name="type">
+        <item>Diesel</item>
+        <item>E5</item>
+        <item>E10</item>
+    </string-array>
+    <string-array name="distance">
+        <item>3</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="sort">
+        <item>Distance</item>
+        <item>Preis</item>
+    </string-array>
+</resources>
